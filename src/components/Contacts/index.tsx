@@ -1,5 +1,5 @@
 import { Container } from "@/styles/Global";
-import { Text } from "@/styles/Text";
+import { Text, TextA } from "@/styles/Text";
 import { motion, useViewportScroll } from "framer-motion";
 
 import {
@@ -28,9 +28,9 @@ export const Contacts = () => {
           <motion.div style={{ opacity: scrollYProgress }}>
             <ContactSectionText>
               <Text type="heading2" color="grey4">
-                Vamos marcar uma conversa e {" "}
+                Vamos marcar uma conversa e{" "}
                 <Text as="span" type="heading2" color="brand1">
-                  Desenvolver nossa Criatividade 
+                  Desenvolver nossa Criatividade
                 </Text>{" "}
                 juntos?
               </Text>
@@ -48,9 +48,7 @@ export const Contacts = () => {
                 <Text type="heading4" color="grey4">
                   Whatsapp
                 </Text>
-                <Text color="grey2" type="body2">
-                  
-                </Text>
+                <Text color="grey2" type="body2"></Text>
                 <Text
                   as="a"
                   color="grey2"
@@ -58,30 +56,7 @@ export const Contacts = () => {
                   target="_blank"
                   href={`https://api.whatsapp.com/send?phone=+55+${userData.whatsappNumber}&text=Ol%C3%A1%2C%20venho%20por%20meio%20do%20seu%20portf%C3%B3lio%20na%20internet%2C%20gostaria%20de%20conhecer%20melhor%20seus%20servi%C3%A7os`}
                 >
-                  Talk Now
-                </Text>
-              </ContactCardContent>
-            </ContactCard>
-
-            <ContactCard>
-              <ContactCardImage className="email">
-                <FaEnvelopeOpen color="#fff" size={24} />
-              </ContactCardImage>
-              <ContactCardContent>
-                <Text type="heading4" color="grey4">
-                  My email
-                </Text>
-                <Text color="grey2" type="body2">
-                  Me mande um email com FeedBacks, Sugestões e ideias
-                </Text>
-                <Text
-                  as="a"
-                  color="grey2"
-                  type="body2"
-                  target="_blank"
-                  href={`mailto=${userData.emailUser}`}
-                >
-                  Send email now
+                  Converse agora
                 </Text>
               </ContactCardContent>
             </ContactCard>
@@ -91,20 +66,21 @@ export const Contacts = () => {
               </ContactCardImage>
               <ContactCardContent>
                 <Text type="heading4" color="grey4">
-                  My LinkedIn
+                  Meu LinkedIn
                 </Text>
                 <Text color="grey2" type="body2">
-                  Podemos criar interações mais constantes se estivermos conectados.
+                  Podemos criar interações mais constantes se estivermos
+                  conectados.
                 </Text>
-                <Text
+                <TextA
                   as="a"
                   color="grey2"
                   type="body2"
                   target="_blank"
-                  href={userData.linkedinUser}
+                  href={`https://www.linkedin.com/in/${userData.linkedinUser}`}
                 >
-                  Go to linkedin Now
-                </Text>
+                  Conecte-se comigo
+                </TextA>
               </ContactCardContent>
             </ContactCard>
           </ContactsCards>
