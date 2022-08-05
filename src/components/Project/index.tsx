@@ -31,6 +31,7 @@ export const Project = (): JSX.Element => {
       );
       const json = await data.json();
       setRepositories(json);
+      console.log(json)
       return json;
     };
     fetchData();
@@ -69,7 +70,7 @@ export const Project = (): JSX.Element => {
           </ProjectStack>
 
           <Text type="body1" color="grey2">
-            {repository.description.substring(0, 129)}
+            {repository.description?.substring(0, 129)}
           </Text>
           <ProjectLinks>
             <ProjectLink target="_blank" href={repository.git_url}>

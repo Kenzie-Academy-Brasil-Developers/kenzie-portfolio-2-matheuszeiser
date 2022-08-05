@@ -14,8 +14,10 @@ export const HandEffect = () => {
     const observer = new IntersectionObserver((entries) => {
       if (entries[0].isIntersecting) {
         setInterval(() => {
-          hand.current.style.animation = `${scaleUp} 1s ease`;
-        }, 500);
+          if (hand) {
+            hand.current.style.animation = `${scaleUp} 1s ease`;
+          }
+        }, 2000);
       }
     });
 

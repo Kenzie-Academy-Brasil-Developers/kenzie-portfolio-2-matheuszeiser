@@ -28,15 +28,14 @@ export const Contacts = () => {
           <motion.div style={{ opacity: scrollYProgress }}>
             <ContactSectionText>
               <Text type="heading2" color="grey4">
-                Let's set up a conversation and{" "}
+                Vamos marcar uma conversa e {" "}
                 <Text as="span" type="heading2" color="brand1">
-                  develop our creativity
+                  Desenvolver nossa Criatividade 
                 </Text>{" "}
-                together?
+                juntos?
               </Text>
               <Text color="grey2" type="body1">
-                Advertise your brand organically within Dribbble’s design
-                inspiration feed.
+                Escolha ao lado uma de minhas redes de comunicação.
               </Text>
             </ContactSectionText>
           </motion.div>
@@ -47,11 +46,10 @@ export const Contacts = () => {
               </ContactCardImage>
               <ContactCardContent>
                 <Text type="heading4" color="grey4">
-                  My Whatsapp
+                  Whatsapp
                 </Text>
                 <Text color="grey2" type="body2">
-                  I'm available for a voice chat, let's about creativity
-                  together?
+                  
                 </Text>
                 <Text
                   as="a"
@@ -74,7 +72,7 @@ export const Contacts = () => {
                   My email
                 </Text>
                 <Text color="grey2" type="body2">
-                  Send me an email reporting feedbacks, suggestions and ideas
+                  Me mande um email com FeedBacks, Sugestões e ideias
                 </Text>
                 <Text
                   as="a"
@@ -96,8 +94,7 @@ export const Contacts = () => {
                   My LinkedIn
                 </Text>
                 <Text color="grey2" type="body2">
-                  We can create more constant interactions as well as a sharing
-                  network
+                  Podemos criar interações mais constantes se estivermos conectados.
                 </Text>
                 <Text
                   as="a"
@@ -106,7 +103,7 @@ export const Contacts = () => {
                   target="_blank"
                   href={userData.linkedinUser}
                 >
-                  Go to Telegram Now
+                  Go to linkedin Now
                 </Text>
               </ContactCardContent>
             </ContactCard>
