@@ -30,8 +30,8 @@ export const Project = (): JSX.Element => {
         `https://api.github.com/users/${userData.githubUser}/repos`
       );
       const json = await data.json();
-      setRepositories(json);
-      console.log(json)
+      const jsonFiltered = json.filter(repo => repo.name != "matheuszeiser")
+      setRepositories(jsonFiltered);
       return json;
     };
     fetchData();
@@ -77,7 +77,10 @@ export const Project = (): JSX.Element => {
               <FaGithub /> Github Code
             </ProjectLink>
             {repository.homepage && (
-              <ProjectLink target="_blank" href={repository.homepage}>
+              <ProjectLink
+                target="_blank"
+                href={`${repository.homepage}`}
+              >
                 <FaShare /> Aplicação
               </ProjectLink>
             )}
