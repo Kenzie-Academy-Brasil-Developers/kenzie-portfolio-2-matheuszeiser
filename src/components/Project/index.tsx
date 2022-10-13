@@ -30,7 +30,7 @@ export const Project = (): JSX.Element => {
         `https://api.github.com/users/${userData.githubUser}/repos`
       );
       const json = await data.json();
-      const jsonFiltered = json.filter(repo => repo.name != "matheuszeiser")
+      const jsonFiltered = json.filter((repo: ReposType) => repo.name != "matheuszeiser")
       setRepositories(jsonFiltered);
       return json;
     };
