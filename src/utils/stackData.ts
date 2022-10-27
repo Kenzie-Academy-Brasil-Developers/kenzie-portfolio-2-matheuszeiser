@@ -4,7 +4,7 @@ import imgJS from "../public/static/img/stack/js.svg";
 import imgNode from "../public/static/img/stack/node.svg";
 import imgStyled from "../public/static/img/stack/styled.svg";
 import imgReact from "../public/static/img/stack/react.svg";
-import { SiTypescript, SiRedux, SiExpress, SiPython, SiDjango, SiGit, SiPostgresql, SiDocker } from "react-icons/si";
+import { SiTypescript, SiRedux, SiExpress, SiPython, SiDjango, SiGit, SiPostgresql, SiDocker, SiAmazonaws } from "react-icons/si";
 
 export const stackData = [
   {
@@ -42,5 +42,6 @@ export const stackData = [
   { title: "Git", img: SiGit, },
   { title: "Docker", img: SiDocker, },
   { title: "PostgreSQL", img: SiPostgresql, },
+  { title: "AWS", img: SiAmazonaws, },
 
 ];
