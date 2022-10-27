@@ -32,6 +32,7 @@ export const HeaderContent = styled("div", {
   "@tablet": {
     width: "30rem",
   },
+
 });
 
 export const HeaderButtonsArea = styled(Flex, {
@@ -60,7 +61,6 @@ export const StackCards = styled("div", {
   gridTemplateColumns: "1fr 1fr 1fr 1fr",
   padding: "3rem 0",
   gap: "6rem",
-  marginTop: "$4",
 
   "@tablet": {
     gridTemplateColumns: "1fr 1fr 1fr",

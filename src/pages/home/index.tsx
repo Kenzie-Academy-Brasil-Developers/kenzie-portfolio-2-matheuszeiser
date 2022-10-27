@@ -53,12 +53,12 @@ export const Home = (): JSX.Element => {
               </Text>{" "}
               os seus problemas{" "}
               <Text as="span" type="heading1" color="brand1">
-                desenvolvendo 
+                desenvolvendo
               </Text>{" "}
               projetos
             </Text>
             <Text type="body1" color="grey2">
-              Desenvolvedor Front End Júnior, sempre disposto a novos desafios!
+              Desenvolvedor Full Stack, sempre disposto a novos desafios!
             </Text>
             <HeaderButtonsArea>
               <Button as="a" type="primary" href="#projects">
@@ -68,15 +68,20 @@ export const Home = (): JSX.Element => {
                 as="a"
                 type="circle"
                 target="_blank"
-                href={userData.githubUser}
+                href={`https://github.com/${userData.githubUser}`}
               >
                 <FaGithub />
               </Button>
             </HeaderButtonsArea>
+            <Text as="h2" type="heading2" color="grey5">
+              Tecnologias:
+            </Text>
             <StackCards>
-              {stackData.map((stack, index) => (
-                <Stack key={index} title={stack.title} icon={stack.img} />
-              ))}
+              <>
+                {stackData.map((stack, index) => (
+                  <Stack key={index} title={stack.title} icon={stack.img} />
+                ))}
+              </>
             </StackCards>
           </HeaderContent>
         </Container>
